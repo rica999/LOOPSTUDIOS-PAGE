@@ -275,12 +275,7 @@ footer{
         font-size: 0.5em;
         text-transform: capitalize;
     }
-    .nav-menu ul a{
-        color: white;
-        text-decoration: none;
-        position: relative;
-    }
-    .nav-menu ul a::after{
+    .nav-menu ul li::after{
         content: "";
         position: absolute;
         bottom: -1em;
@@ -289,10 +284,12 @@ footer{
         transform: translateX(-50%);
         background-color: var(--white);
     }
-    .nav-menu ul a:hover::after{
+    .nav-menu ul li:hover::after{
         width: 25px;
     }
     .nav-menu ul li{
+        color: white;
+        text-decoration: none;
         padding-left: 0;
         font-size: 1.7em;
         position: relative;
